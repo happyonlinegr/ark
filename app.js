@@ -19,4 +19,26 @@ window.addEventListener("load", (event) => {
           prevEl: ".swiper-button-prev",
         },
   });
+
+  var gather_top_swiper = new Swiper(".gather-top-swiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
   });
+
+  var eat_drink_top_swiper = new Swiper(".eat-drink-top-swiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
+
+  var menu_top_swiper = new Swiper(".menu-top-swiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
+
+});

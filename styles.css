@@ -330,31 +330,20 @@ section.flex.reverse{
 }
 
 
-.home-bottom-gallery :is(.swiper-button-next, .swiper-button-prev){
-    color:rgba(0,0,0,0.6);    
-    background-color: rgba(255,255,255,0.6);
-    width:45px;
-    height:45px;
-    border-radius: 50%;
+.swiper-button-next, .swiper-button-prev{
+    color:rgba(0,0,0,0.6) !important;    
+    background-color: rgba(255,255,255,0.6) !important;
+    width:45px !important;
+    height:45px !important;
+    border-radius: 50% !important;
 }
 
-.home-bottom-gallery .swiper-button-next:after,.home-bottom-gallery .swiper-button-prev:after{
+.swiper-button-next:after,.swiper-button-prev:after{
     font-size: 20px !important;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
-.philosophy-top-swiper :is(.swiper-button-next, .swiper-button-prev){
-    color:rgba(0,0,0,0.6);    
-    background-color: rgba(255,255,255,0.6);
-    width:45px;
-    height:45px;
-    border-radius: 50%;
-}
 
-.philosophy-top-swiper .swiper-button-next:after,.philosophy-top-swiper .swiper-button-prev:after{
-    font-size: 20px !important;
-    font-weight: 600;
-}
 
 footer{
     margin-top:130px;
@@ -539,6 +528,129 @@ body{
     margin-top:30px;
 }
 
+.gather .section-1 h2, .eat-drink h2{
+    font-size: 72px;
+    font-weight: 300;
+}
+.gather .body-sections-container p, .our-philosophy .body-sections-container p, .eat-drink .body-sections-container p{
+    font-size: 24px !important;
+}
+
+.gather .section-1 .common-button{
+    margin-top: 24px;
+}
+.eat-drink .section-1 .common-button{
+    margin-top: 24px;
+}
+.gather .section-1-images{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    margin-top:90px;
+}
+
+.eat-drink .section-1-images{
+    margin-top:120px;
+    padding-left:2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:120px;
+}
+
+.eat-drink .section-1-images .img-cont{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.eat-drink .section-1-images .img-cont img{
+    aspect-ratio: 642/434;
+    max-width: 642px;
+    object-fit: cover;
+}
+
+.eat-drink .img-cont-main h3{
+    font-family: "objektiv-mk1";
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.eat-drink .img-cont-main h4{
+    font-size: 46px;
+    font-weight: 300;
+    font-family: 'ivypresto-display';
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.eat-drink .img-cont-main p{
+    font-size: 22px !important;
+}
+
+.menu .section-1 p{
+    margin-bottom:26px;
+}
+
+.menu .section-2{
+    margin-top:100px;
+    margin-bottom:128px;
+}
+.menu .menu-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    max-width: 677px;
+    margin-left:auto;
+    margin-right: auto;
+    gap:16px;
+}
+
+.menu .section-3{
+    display: flex;
+    justify-content: start;
+    gap:70px;
+}
+
+.menu .section-3 img{
+    aspect-ratio: 640/967;
+    max-width: 640px;
+}
+
+.menu .hours h3{
+    font-family: 'objektiv-mk1';
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom:0.5rem;
+}
+
+.menu .hours ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:26px;
+    gap:0.2rem;
+}
+
+.menu .hours ul li{
+    font-family: 'objektiv-mk1';
+    font-weight: normal;
+    font-size: 22px;
+}
+
+
+
+.menu .menu-grid .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+    border:1px solid black;
+    width: 100%;
+    height: 207px;
+}
 
 
 @media only screen and (max-width: 1440px){
