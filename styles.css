@@ -528,10 +528,11 @@ body{
     margin-top:30px;
 }
 
-.gather .section-1 h2, .eat-drink h2{
+.gather .section-1 h2, .eat-drink h2, .menu h2{
     font-size: 72px;
     font-weight: 300;
 }
+
 .gather .body-sections-container p, .our-philosophy .body-sections-container p, .eat-drink .body-sections-container p{
     font-size: 24px !important;
 }
@@ -539,9 +540,11 @@ body{
 .gather .section-1 .common-button{
     margin-top: 24px;
 }
+
 .eat-drink .section-1 .common-button{
     margin-top: 24px;
 }
+
 .gather .section-1-images{
     display: flex;
     justify-content: space-between;
@@ -638,8 +641,25 @@ body{
     font-weight: normal;
     font-size: 22px;
 }
+.menu .hours h2{
+    font-weight: normal;
+}
 
+.menu .section-2 .item h3{
+    font-family: 'ivypresto-display';
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 2.8px;
+}
 
+.menu .section-2 .item h4{
+    font-family: 'ivypresto-display';
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+}
 
 .menu .menu-grid .item{
     display: flex;
@@ -650,6 +670,72 @@ body{
     border:1px solid black;
     width: 100%;
     height: 207px;
+    transition:0.2s ease all;
+    cursor: pointer;
+}
+
+.menu .menu-grid .item:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.news .our-news-main{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+}
+.news .our-news-main .block img{
+    aspect-ratio: 613/460;
+    max-width: 613px;
+    width:100%;
+    object-fit: cover;
+}
+
+.news .body-sections-container h1{
+    font-family: 'ivypresto-display';
+    font-weight: 300;
+    font-size: 42px;
+}
+
+.news .our-news-main .block p{
+    font-size: 20px;
+    font-family: 'objektiv-mk1';
+    font-weight: normal;
+    margin-top:15px;
+    line-height: 1;
+}
+
+.news .our-news-main .block h2{
+    font-size: 26px;
+    font-family: 'ivypresto-display';
+    font-weight: 300;
+    line-height: 36px;
+    margin-top:24px;
+}
+
+.news-single .body-sections{
+    margin-top: 44px;
+}
+
+.news-single .body-sections-container p{
+    font-size: 24px;
+    font-family: 'objektiv-mk1';
+    margin-bottom:20px;
+}
+
+.news-single .body-sections-container h1{
+    font-size: 36px;
+    font-family: 'ivypresto-display';
+    font-weight: 300;
+    text-transform: none;
+    margin-bottom:80px;
+}
+
+.news-single .our-news-single-main p{
+    font-size: 24px;
+    font-family: 'objektiv-mk1';
+    margin-bottom:65px;
 }
 
 

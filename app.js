@@ -41,4 +41,18 @@ window.addEventListener("load", (event) => {
       },
   });
 
+  var news_top_swiper = new Swiper(".news-top-swiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
+
+  var news_signle_top_swiper = new Swiper(".news-single-top-swiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });
+
 });
