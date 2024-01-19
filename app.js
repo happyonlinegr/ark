@@ -56,3 +56,13 @@ function toggle_menu(){
         prevEl: ".swiper-button-prev",
       },
   });
+
+  var home_auto_swiper = new Swiper(".home-auto-swiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop:true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+  });

@@ -302,20 +302,20 @@ section.flex.reverse{
     margin-bottom:0;
 }
 
-.eat-drink h3{
+.eat-drink h3 , .home-auto-swiper .box h3{
     font-family: 'open-sans';
     margin-bottom: 0;
     font-size: 18px;
     font-weight: normal;
     letter-spacing: 10.8px;
 }
-.eat-drink h4{
+.eat-drink h4, .home-auto-swiper .box h4{
     font-family: 'ivypresto-display';
     font-weight: 300;
     font-size: 32px;
 
 }
-.eat-drink-boxes .box-desc{
+.eat-drink-boxes .box-desc, .home-auto-swiper .box-desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -825,7 +825,23 @@ body{
     width:24px;
 }
 
+.home-auto-swiper .box{
+    border-bottom: 0.75px solid black;
+}
 
+.home-auto .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.home-auto .title h2{
+    margin: 0;
+}
+
+.home-auto{
+    display: none;
+}
 
 
 /* media queries */
@@ -1086,6 +1102,20 @@ body{
 }
 
 @media only screen and (max-width: 800px){
+
+    footer{
+        margin-top:0;
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 16px !important;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        width: 40px !important;
+        height: 40px !important;
+    }
+
     .footer-container .footer-top-container{
         flex-direction: column;
         justify-content: center;
@@ -1136,7 +1166,191 @@ body{
     section h2{
         font-size: 32px;
     }
+    .gather .body-sections-container p, .our-philosophy .body-sections-container p, .eat-drink .body-sections-container p{
+        font-size: 18px !important;
+    }
+    .eat-drink .img-cont-main h4{
+        font-size: 36px;
+    }
+    .eat-drink .img-cont-main h3{
+        font-size: 18px;
+    }
+    .eat-drink .section-1-images{
+        gap:80px;
+    }
+    .menu .menu-grid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .menu .menu-grid .item{
+        max-width: 207px;
+    }
+}
 
+@media only screen and (max-width: 575px){
+
+    .home-gallery{
+        height: 60vh;
+    }
+    .section-content{
+        min-width: auto;
+    }
+
+    body{
+        margin-top:80px;
+    }
+
+    .home-auto{
+        display: block;
+    }
+    .home .eat-drink{
+        display: none;
+    }
+    .home-intro div{
+        font-size: 26px;
+        line-height: 44px;
+    }
+    .home-intro h1{
+        font-size: 20px;
+    }
+    section h2{
+        font-size: 28px;
+    }
+    section h3{
+        font-size: 18px;
+    }
+    .common-button{
+        font-size: 14px;
+    }
+    .eat-drink .title h2{
+        font-size: 28px;
+    }
+    .eat-drink h3{
+        font-size: 12px;
+    }
+    .eat-drink h4{
+        font-size: 20px;
+    }
+    .mb-140{
+        margin-bottom: 80px;
+    }
+    .tel-location-footer p{
+        font-size: 12px;
+    }
+    footer .socials p{
+        font-size: 12px;
+    }
+    footer .logo img{
+        max-width: 90px;
+    }
+    .gather .section-1 h2, .eat-drink h2, .menu h2{
+        font-size: 28px;
+    }
+    .gather .body-sections-container p, .our-philosophy .body-sections-container p, .eat-drink .body-sections-container p{
+        font-size: 16px !important;
+    }
+    .eat-drink .img-cont-main h4{
+        font-size: 32px;
+    }
+    .eat-drink .img-cont-main h3{
+        font-size: 16px;
+    }
+    .body-sections-container h1{
+        font-size: 16px;
+    }
+    .menu .section-2 .item h3{
+        font-size: 24px;
+    }
+    .menu .section-2 .item h4{
+        font-size: 16px;
+    }
+    .menu .menu-grid .item{
+        gap:1.5rem;
+    }
+    .menu .menu-grid .item{
+        height: 180px;
+        width: 180px;
+    }
+    .menu .hours h3{
+        font-size: 20px;
+    }
+    .menu .hours ul li{
+        font-size: 18px;
+    }
+
+    .menu .section-3 .hours{
+        padding:2rem;
+    }
+    .news-single .body-sections-container p{
+        font-size: 18px;
+    }
+    .news-single .body-sections-container h1{
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+    .chef-desc h2{
+        font-size: 36px;
+    }
+    .header-mobile .end{
+        gap:2rem;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .home-intro{
+        margin-top: 55px;
+    }
+    .home-intro h1{
+        font-size: 16px;
+    }
+    .home-intro div{
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .sections section p {
+        line-height: 26px;
+        font-size: 14px;
+    }
+    section h2{
+        font-size: 26px;
+        margin-bottom: 22px;
+    }
+    section h3{
+        font-size: 16px;
+    }
+
+    section h3{
+        margin-bottom: 12px;
+    }
+    section.flex{
+        gap:1rem;
+    }
+    .home-auto .title{
+        margin-bottom: 1rem;
+    }
+    .common-button{
+        font-size: 12px;
+    }
+    .eat-drink h3, .home-auto-swiper .box h3{
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+    .eat-drink h4, .home-auto-swiper .box h4{
+        font-size: 24px;
+    }
+    .px-2{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .header-mobile{
+        padding:0 1rem;
+        padding-right: 0.8rem;
+    }
+    header nav ul li a{
+        font-size: 16px;
+    }
 }
 
 header.active{
