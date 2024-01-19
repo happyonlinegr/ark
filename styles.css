@@ -388,7 +388,20 @@ footer .socials{
     display: flex;
     align-items: center;
     gap:12px;
+    cursor:pointer;
 }
+.tel-location-footer p{
+    transition:0.2s ease all;
+    border-bottom: 1px solid transparent;
+}
+.tel-location-footer:hover p{
+    border-bottom:1px solid black;
+}
+.tel-location-footer:hover .circle a{
+    background-color: black;
+    fill:white;
+}
+
 footer .tel-location{
     display: flex;
     flex-direction: column;
@@ -473,10 +486,6 @@ body{
     box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
 }
 
-.body-sections{
-    padding-left:2rem;
-    padding-right:2rem;
-}
 
 .body-sections-container{
     max-width:1300px;
@@ -1111,9 +1120,13 @@ body{
 
 @media only screen and (max-width: 800px){
 
-    footer{
-        margin-top:0;
+    .home footer{
+        margin-top: 0;
     }
+    footer{
+        margin-top: 80px;
+    }
+
 
     .swiper-button-next:after, .swiper-button-prev:after{
         font-size: 16px !important;
@@ -1307,6 +1320,82 @@ body{
 }
 
 @media only screen and (max-width: 440px){
+
+    .chef-desc h2{
+        line-height: 42px;
+        margin-bottom:40px;
+    }
+
+    .body-sections h3{
+        font-size: 26px;
+    }
+
+    .news-single .body-sections-container p{
+        font-size: 16px;
+    }
+
+    .news .body-sections-container h1{
+        font-size: 28px;
+    }
+
+    .news .our-news-main .block p {
+        font-size: 16px;
+    }
+
+    .news .our-news-main .block h2{
+        margin-top: 16px;
+    }
+
+    .menu .hours h3{
+        font-size: 18px;
+    }
+
+    .menu .menu-grid .item{
+        height: 160px;
+        width: 160px;
+    }
+    .menu .section-2 .item h4{
+        font-size: 14px;
+    }
+    .menu .section-2 .item h3{
+        font-size: 20px;
+    }
+    .menu .hours ul li{
+        font-size: 16px;
+    }
+
+    .body-sections-container h1{
+        font-size: 12px;
+    }
+
+    .body-sections{
+        margin-top:40px;
+    }
+
+    .gather .section-1 h2, .eat-drink h2, .menu h2{
+        font-size: 26px;
+    }
+
+    .eat-drink .section-1-images{
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+    
+    .eat-drink .img-cont-main h4{
+        font-size: 26px;
+        margin-bottom: 20px;
+        margin-top:5px;
+    }
+    .eat-drink .img-cont-main h3{
+        font-size: 14px;
+    }
+    .gather .body-sections-container p, .our-philosophy .body-sections-container p, .eat-drink .body-sections-container p{
+        font-size: 14px !important;
+    }
+
+    .top-swiper{
+        height:60vh;
+    }
 
     header{
         max-width: 100%;
