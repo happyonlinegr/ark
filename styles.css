@@ -468,7 +468,7 @@ body{
     position: fixed;
     right: 0;
     z-index: 100;
-    top: 120px;
+    top: 60px;
     border-radius: 10px 0 0 10px;
     box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
 }
@@ -772,7 +772,7 @@ body{
     background-color: rgba(255,255,255,0.5);
     backdrop-filter: blur(30px);
     z-index: 100;
-    box-shadow: black 0px 1px 6px;
+    box-shadow: rgba(0,0,0,0.2) 0px 1px 6px;
 }
 .header-mobile .logo{
     display: flex;
@@ -990,6 +990,14 @@ body{
 }
 @media only screen and (max-width: 1080px){
 
+    .award{
+        top:120px;
+        max-width: 60px;
+    }
+    .award:hover{
+        max-width: 120px;
+    }
+
     .circle a{
         width:36px;
         height: 36px;
@@ -1055,12 +1063,12 @@ body{
         z-index: 100;
         top:80px;
         margin-left:auto;
-        background-color: rgba(255,255,255,0.6);
+        background-color: rgba(255,255,255,0.8);
         backdrop-filter: blur(20px);
         max-width: 400px;
         padding-left:2rem;
         padding-right: 2rem;
-        box-shadow: black 0px 3px 8px;
+        box-shadow: rgba(0,0,0,0.2) 0px 3px 8px;
         transition:0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 
@@ -1299,6 +1307,29 @@ body{
 }
 
 @media only screen and (max-width: 440px){
+
+    header{
+        max-width: 100%;
+    }
+
+    header nav ul{
+        gap:1.5rem;
+    }
+
+    .burger{
+        height: 28px;
+    }
+    .burger.active .burger-line{
+        width:20px;
+    }
+    .circle a{
+        width:30px;
+        height:30px
+    }
+    .circle a svg{
+        transform:scale(0.8);
+    }
+
     .home-intro{
         margin-top: 55px;
     }
@@ -1350,6 +1381,9 @@ body{
     }
     header nav ul li a{
         font-size: 16px;
+    }
+    .home-intro{
+        margin-top:80px;
     }
 }
 
