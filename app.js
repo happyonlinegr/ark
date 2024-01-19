@@ -1,6 +1,7 @@
 function toggle_menu(){
   document.querySelector(".burger").classList.toggle('active');
   document.querySelector("header").classList.toggle('active');
+  document.querySelector('body').classList.toggle('active');
 }
     var home_top_swiper = new Swiper(".home-top-swiper", {
       pagination: {

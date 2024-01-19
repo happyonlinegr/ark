@@ -45,7 +45,38 @@ header{
     margin-right:0.5rem;
 }
 
-/* don't remove */
+body{
+    transition:0.3s ease all;
+}
+
+body.active{
+    position: relative;
+    overflow: hidden;
+}
+body::after{
+    position: absolute;
+    content: '';
+    inset:0;
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.2);
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    pointer-events: none;
+    opacity: 0;
+    transition:0.3s ease all;
+}
+body.active::after{
+    opacity: 1;
+    position: absolute;
+    content: '';
+    inset:0;
+    width:100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+    z-index: 1;
+    backdrop-filter: blur(3px);
+}
 
 header .logo{
     display: flex; 
