@@ -1513,4 +1513,12 @@ body{
 
 header.active{
     transform:translate(0);
+    height: calc(100vh - 80px);
+}
+
+header.active nav{
+    padding-top:0;
+}
+header.active .en-el{
+    margin-bottom:0;
 }

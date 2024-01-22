@@ -58,6 +58,7 @@ function toggle_menu(){
       },
   });
 
+if(window.innerWidth < 576){
   var home_auto_swiper = new Swiper(".home-auto-swiper", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -67,3 +68,4 @@ function toggle_menu(){
       disableOnInteraction: false
     },
   });
+}
