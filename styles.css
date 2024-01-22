@@ -198,6 +198,7 @@ header .tel-location{
 
 .en-el ul li{
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 main{
@@ -888,6 +889,22 @@ body{
 
 
 /* media queries */
+
+
+@media only screen and (min-width: 2250px){
+    header nav ul li a{
+        font-size: 22px;
+    }
+    .en-el ul li{
+        font-size: 18px;
+    }
+    .footer-top-container{
+        max-width: 1200px;
+    }
+    .footer-bottom ul li a{
+        font-size: 16px;
+    }
+}
 
 @media only screen and (max-width: 1600px){
     .eat-drink .section-1-images .img-cont img{
